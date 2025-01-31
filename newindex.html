@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    some more code
+</head>
+<body>
+    <h2>auush</h2>
+    <h1>hello ayush</h1>
+</body>
+</html>
+
+<!-- src/**/*/images
+src/*.txt
+src/mocks -->
+
+syntax of branch
+<!-- 
+<type>/<scope>/<subject>
+  small
+    type:
+    feat -featuere
+    fix - fix the bug
+    docs - documentaion
+    style - style
+    refactor  
+    perf 
+    test testing code
+    build -configuration file for another paltform
+    chore-maintain the code
+    
+ -->
+
+ fix/account/deletebutton
+
+
+ <!-- PS C:\Users\laptop\Downloads\practicegit> git remote add origin https://github.com/ayushgiri91/Git-Test.git
+error: remote origin already exists.
+PS C:\Users\laptop\Downloads\practicegit> git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 218 bytes | 218.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/ayushgiri91/Git-Test.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\laptop\Downloads\practicegit> git pull origin main
+>>
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 939 bytes | 58.00 KiB/s, done.
+From https://github.com/ayushgiri91/Git-Test
+ * branch            main       -> FETCH_HEAD
+   770388a..57458da  main       -> origin/main
+Updating 770388a..57458da
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+PS C:\Users\laptop\Downloads\practicegit> git commit -m "second comiit"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\laptop\Downloads\practicegit> git add .
+PS C:\Users\laptop\Downloads\practicegit> git commit -am "second commit" 
+[main 0d42e2f] second commit
+ 1 file changed, 11 insertions(+)
+ create mode 100644 index.html
+PS C:\Users\laptop\Downloads\practicegit> git commit --amend -m "New commit message"
+>>
+[main 89f7c62] New commit message
+ Date: Fri Jan 31 12:40:15 2025 +0530
+ 1 file changed, 11 insertions(+)
+ create mode 100644 index.html
+PS C:\Users\laptop\Downloads\practicegit> git log -v
+commit 89f7c62cce4686a75f453be291be11e3352569f7 (HEAD -> main)
+Author: Ayush <giriayush2903@gmail.com>
+Date:   Fri Jan 31 12:40:15 2025 +0530
+
+    New commit message
+
+commit 57458dabbe8055107dbf6f533c1c237e8b50dbd7 (origin/main)
+PS C:\Users\laptop\Downloads\practicegit> q
+q : The term 'q' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ q
++ ~
+    + CategoryInfo          : ObjectNotFound: (q:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\laptop\Downloads\practicegit> git commit --amend -m "New commit message"
+>> git commit --amend -m "New commit message"
+>>
+[main c19bdd3] New commit message
+ Date: Fri Jan 31 12:40:15 2025 +0530
+ 1 file changed, 11 insertions(+)
+ create mode 100644 index.html
+[main c19bdd3] New commit message
+ Date: Fri Jan 31 12:40:15 2025 +0530
+ 1 file changed, 11 insertions(+)
+ create mode 100644 index.html
+PS C:\Users\laptop\Downloads\practicegit> git commit --amend -m "New commit2 message"
+>> 
+[main 210b367] New commit2 message
+ Date: Fri Jan 31 12:40:15 2025 +0530
+ 1 file changed, 11 insertions(+)
+ create mode 100644 index.html
+PS C:\Users\laptop\Downloads\practicegit> git log -v
+commit 210b367911cdf1b92aa5703d801f1d74e64ab022 (HEAD -> main)
+Author: Ayush <giriayush2903@gmail.com>
+Date:   Fri Jan 31 12:40:15 2025 +0530
+
+    New commit2 message
+
+commit 57458dabbe8055107dbf6f533c1c237e8b50dbd7 (origin/main)
+PS C:\Users\laptop\Downloads\practicegit> git ls-files
+README.md
+index.html
+index.txt
+PS C:\Users\laptop\Downloads\practicegit> git mv index.html newindex.html
+PS C:\Users\laptop\Downloads\practicegit> git log --abbrev-commit
+commit 210b367 (HEAD -> main)
+Author: Ayush <giriayush2903@gmail.com>
+Date:   Fri Jan 31 12:40:15 2025 +0530
+
+    New commit2 message
+
+commit 57458da (origin/main)
+PS C:\Users\laptop\Downloads\practicegit> git config --global alias.pul 
+PS C:\Users\laptop\Downloads\practicegit> pull origin main
+pull : The term 'pull' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.       
+At line:1 char:1
++ pull origin main
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (pull:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\laptop\Downloads\practicegit> git config --global alias.pul "pull origin main"
+PS C:\Users\laptop\Downloads\practicegit> git pul
+From https://github.com/ayushgiri91/Git-Test
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+PS C:\Users\laptop\Downloads\practicegit> git diff 
+diff --git a/newindex.html b/newindex.html
+index e331e99..5b11a8b 100644
+--- a/newindex.html
++++ b/newindex.html
+@@ -6,6 +6,11 @@
+     <title>Document</title>
+ </head>
+PS C:\Users\laptop\Downloads\practicegit> git diff head
+diff --git a/index.html b/newindex.html
+similarity index 77%
+rename from index.html
+rename to newindex.html
+index e331e99..5b11a8b 100644
+--- a/index.html
++++ b/newindex.html
+PS C:\Users\laptop\Downloads\practicegit> git diff head
+diff --git a/index.html b/newindex.html
+similarity index 72%
+rename from index.html
+rename to newindex.html
+index e331e99..3250cb3 100644
+--- a/index.html
++++ b/newindex.html
+PS C:\Users\laptop\Downloads\practicegit> git diff head
+diff --git a/index.html b/newindex.html
+similarity index 70%
+rename from index.html
+rename to newindex.html
+index e331e99..f2263e4 100644
+--- a/index.html
++++ b/newindex.html
+PS C:\Users\laptop\Downloads\practicegit> git branch "Branch_Name1"
+PS C:\Users\laptop\Downloads\practicegit> git checkout "Branch_Name1"
+D       index.html
+A       newindex.html
+Switched to branch 'Branch_Name1'
+PS C:\Users\laptop\Downloads\practicegit> git checout main 
+git: 'checout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+PS C:\Users\laptop\Downloads\practicegit> git checkout main
+D       index.html
+A       newindex.html
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+PS C:\Users\laptop\Downloads\practicegit> git checkout -b NayiBranch
+Switched to a new branch 'NayiBranch'
+PS C:\Users\laptop\Downloads\practicegit> git branch -m NayiBranch Nayibranch2
+PS C:\Users\laptop\Downloads\practicegit> git checkout main
+D       index.html
+A       newindex.html
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+PS C:\Users\laptop\Downloads\practicegit> git branch -d Nayibranch2
+Deleted branch Nayibranch2 (was 210b367).
+PS C:\Users\laptop\Downloads\practicegit>  -->
+
+
+
+hoe to write commit messege
+
+type(scope):short description
+
+fix(account):remove delete  account button  for guest user
+
